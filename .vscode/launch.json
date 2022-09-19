@@ -1,0 +1,25 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "-a", "tf_efficientnetv2_m_in21ft1k",
+                "--batch-size", "128",
+                "--gem-eval-p", "1.0",
+                "--weight", "${cwd}/checkpoint_0009.pth.tar",
+                "--input-size", "512",
+                "--target-set", "qr", "/home/mlteam/hongmin/data/cwmla/",
+            ]
+        }
+    ]
+}
